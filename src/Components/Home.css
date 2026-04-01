@@ -1,0 +1,786 @@
+/* ------------------ Base Styling (Desktop First) ------------------ */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.bk {
+    background: linear-gradient(135deg, #4892dd 0%, #ffffff 100%);
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.banner {
+    position: relative;
+    background: url('../Assets/background.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+/* .banner::after {
+    content: '';
+    position: absolute;
+    top: 552px;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    transform: skewY(2deg);
+    transform-origin: left;
+    background-image: linear-gradient(rgb(2, 6, 73));
+} */
+
+.info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background-image: linear-gradient(rgba(83, 187, 247, 0.886), rgba(53, 98, 132, 0.866));
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left {
+    width: 45%;
+    margin: 0 40px;
+}
+
+.left span {
+    font-size: 1rem;
+    background-color: #ffffff53;
+    border-radius: 20px;
+    padding: 10px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.left h2 {
+    font-size: 3.7rem;
+    margin: 0;
+    color: #f4a300;
+    margin-top: 20px;
+}
+
+.left p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+.start-btn {
+    background-color: #f4a300;
+    color: #fff;
+    font-weight: 900;
+    font-size: 1.1rem;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: -20px;
+    transition: 0.5s ease;
+}
+
+.start-btn:hover {
+    background-color: white;
+    color: #f4a300;
+}
+
+.btn-link {
+    font-size: 1rem;
+    background-color: transparent;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-weight: 900;
+    border: 2px solid #f4a300;
+    transition: 0.4s ease;
+    text-decoration: none;
+    color: #f4a300;
+    transition: 0.4s ease;
+}
+
+.btn-link:hover {
+    color: white;
+    border: 2px solid white;
+}
+
+
+.mid {
+    background-color: rgba(1, 1, 87, 0.483);
+    width: 35%;
+    border-radius: 50%;
+    height: 70vh;
+    margin: auto;
+    box-shadow: 1px 1px 50px rgb(16, 110, 233);
+    position: relative;
+}
+
+.mid img {
+    position: absolute;
+    width: 200%;
+    left: -40%;
+    top: -20%;
+}
+
+
+/* ------------------ Responsive Breakpoints ------------------ */
+@media (max-width: 2000px) and (min-width: 1500px) {
+    .banner {
+        height: 85vh;
+        /* adjust height */
+    }
+
+    .left span {
+        font-size: 1.56rem;
+        /* adjust span font size */
+    }
+
+    .left h2 {
+        font-size: 5rem;
+        /* slightly smaller heading */
+    }
+
+    .left p {
+        font-size: 1.5rem;
+        /* reduce paragraph text */
+    }
+
+    .start-btn {
+        padding: 20px 50px;
+        font-size: 1.5rem;
+    }
+
+    .btn-link {
+        padding: 20px 50px;
+        font-size: 1.5rem;
+    }
+
+    .mid {
+        height: 55vh;
+    }
+
+    .mid img {
+        width: 180%;
+        left: -30%;
+        top: -5%;
+    }
+
+    .banner::after {
+        top: 930px;
+        /* adjust skew background position */
+    }
+}
+
+@media (max-width:1360px) and (min-width: 1025px) {
+    .banner {
+        height: 70vh;
+    }
+
+    .left {
+        width: 50%;
+    }
+
+    .left span {
+        font-size: 1.2rem;
+    }
+
+    .left h2 {
+        font-size: 3.5rem;
+    }
+
+    .left p {
+        font-size: 1.2rem;
+    }
+
+    .mid {
+        height: 45vh;
+    }
+
+    .mid img {
+        width: 150%;
+        left: -20%;
+        top: -10%;
+    }
+
+    .banner::after {
+        top: 560px;
+    }
+
+}
+
+@media (max-width: 1024px) and (min-width: 913px) {
+    .banner {
+        height: 65vh;
+    }
+
+    .left {
+        width: 45%;
+    }
+
+    .left span {
+        font-size: 0.9rem;
+    }
+
+    .left h2 {
+        font-size: 3rem;
+    }
+
+    .mid {
+        height: 45vh;
+    }
+
+    .mid img {
+        width: 180%;
+        margin-left: -30px;
+        margin-top: 10px;
+    }
+
+    .banner::after {
+        top: 440px;
+    }
+}
+
+@media (max-width: 912px) and (min-width: 854px) {
+    .banner {
+        height: 60vh;
+    }
+
+    .left {
+        width: 45%;
+    }
+
+    .left span {
+        font-size: 0.9rem;
+    }
+
+    .left h2 {
+        font-size: 2.8rem;
+    }
+
+    .mid {
+        height: 25vh;
+    }
+
+    .mid img {
+        width: 220%;
+        margin-left: -20px;
+        margin-top: -10px;
+    }
+
+    .banner::after {
+        top: 760px;
+    }
+
+}
+
+@media (max-width:853px) and (min-width: 769px) {
+    .bk {
+        overflow-x: hidden;
+    }
+
+    .mid {
+        height: 26vh;
+        width: 55%;
+    }
+
+    .mid img {
+        width: 210%;
+        margin-left: -20px;
+        margin-top: -10px;
+    }
+
+    .banner::after {
+        top: 780px;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 541px) {
+    .banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .mid {
+        width: 70%;
+        height: 50vh;
+        margin: 20px auto;
+    }
+
+    .mid img {
+        width: 560px;
+    }
+
+    .left span {
+        font-size: 0.8rem;
+    }
+
+    .left h2 {
+        font-size: 2.5rem;
+    }
+
+    .left p {
+        font-size: 0.9rem;
+    }
+
+    .btn-link {
+        padding: 8px 8px;
+        font-size: 1rem;
+    }
+
+    .start-btn {
+        padding: 8px 8px;
+        font-size: 1rem;
+    }
+
+    .banner::after {
+        top: 480px;
+        /* adjust skew background position */
+    }
+}
+
+@media (max-width: 540px) and (min-width: 431px) {
+    .banner {
+        height: 60vh;
+    }
+
+    .mid {
+        width: 60%;
+        height: 40vh;
+    }
+
+    .mid img {
+        width: 200%;
+        margin-top: 20px;
+    }
+
+    .left {
+        width: 50%;
+        text-align: center;
+        margin-left: 10px;
+    }
+
+    .left span {
+        font-size: 0.5rem;
+    }
+
+    .left h2 {
+        margin-top: 15px;
+        font-size: 1.5rem;
+    }
+
+    .left p {
+        margin-top: 15px;
+        font-size: 0.7rem;
+    }
+
+    .btn-link {
+        padding: 7px 7px;
+        font-size: 0.8rem;
+    }
+
+    .start-btn {
+        margin-top: 16px;
+        padding: 7px 7px;
+        font-size: 0.8rem;
+    }
+
+    .banner::after {
+        top: 400px;
+    }
+
+}
+
+@media (max-width: 430px) and (min-width: 426px) {
+    .banner {
+        height: 55vh;
+    }
+
+    .mid {
+        width: 50%;
+        height: 20vh;
+    }
+
+    .mid img {
+        width: 220%;
+        margin-left: -20px;
+        margin-top: 0px;
+    }
+
+    .left {
+        width: 50%;
+        text-align: center;
+        margin-left: 10px;
+    }
+
+    .left span {
+        font-size: 0.4rem;
+    }
+
+    .left h2 {
+        margin-top: 15px;
+        font-size: 1.2rem;
+    }
+
+    .left p {
+        margin-top: 15px;
+        font-size: 0.5rem;
+    }
+
+    .btn-link {
+        padding: 5px 5px;
+        font-size: 0.6rem;
+    }
+
+    .start-btn {
+        margin-top: 16px;
+        padding: 5px 5px;
+        font-size: 0.6rem;
+    }
+
+    .banner::after {
+        top: 450px;
+    }
+
+}
+
+@media (max-width: 425px) and (min-width: 414px) {
+    .banner {
+        height: 50vh;
+    }
+
+
+    .mid {
+        width: 40%;
+        height: 20vh;
+    }
+
+    .mid img {
+        width: 220%;
+        margin-left: -20px;
+        margin-top: 0px;
+    }
+
+    .left {
+        width: 50%;
+        text-align: center;
+        margin-left: 10px;
+    }
+
+    .left span {
+        font-size: 0.4rem;
+    }
+
+    .left h2 {
+        margin-top: 15px;
+        font-size: 1.2rem;
+    }
+
+    .left p {
+        margin-top: 15px;
+        font-size: 0.5rem;
+    }
+
+    .btn-link {
+        padding: 5px 5px;
+        font-size: 0.6rem;
+    }
+
+    .start-btn {
+        margin-top: 16px;
+        padding: 5px 5px;
+        font-size: 0.6rem;
+    }
+
+    .banner::after {
+        top: 370px;
+    }
+}
+
+@media (max-width: 412px) and (min-width: 376px) {
+    .banner {
+        height: 50vh;
+    }
+
+
+    .mid {
+        width: 40%;
+        height: 18vh;
+    }
+
+    .mid img {
+        width: 220%;
+        margin-left: -20px;
+        margin-top: 0px;
+    }
+
+    .left {
+        width: 50%;
+        text-align: center;
+        margin-left: 10px;
+    }
+
+    .left span {
+        font-size: 0.4rem;
+    }
+
+    .left h2 {
+        margin-top: 15px;
+        font-size: 1.2rem;
+    }
+
+    .left p {
+        margin-top: 15px;
+        font-size: 0.5rem;
+    }
+
+    .btn-link {
+        padding: 5px 5px;
+        font-size: 0.6rem;
+    }
+
+    .start-btn {
+        margin-top: 16px;
+        padding: 5px 5px;
+        font-size: 0.6rem;
+    }
+
+    .banner::after {
+        top: 380px;
+    }
+}
+
+@media (max-width: 375px) and (min-width: 321px) {
+    .banner {
+        height: 45vh;
+    }
+
+    .mid {
+        height: 15vh;
+    }
+
+    .mid img {
+        width: 190%;
+        margin-left: 5px;
+        margin-top: 20px;
+    }
+
+    .left {
+        width: 50%;
+        text-align: center;
+        margin-left: 10px;
+    }
+
+    .left span {
+        font-size: 0.4rem;
+    }
+
+    .left h2 {
+        margin-top: 15px;
+        font-size: 1.2rem;
+    }
+
+    .left p {
+        margin-top: 15px;
+        font-size: 0.5rem;
+    }
+
+    .btn-link {
+        padding: 5px 5px;
+        font-size: 0.6rem;
+    }
+
+    .start-btn {
+        margin-top: 16px;
+        padding: 5px 5px;
+        font-size: 0.6rem;
+    }
+
+    .banner::after {
+        top: 330px;
+        /* adjust skew background position */
+    }
+}
+
+@media (max-width: 320px) {
+    .banner {
+        height: 40vh;
+    }
+
+
+    .mid {
+        height: 20vh;
+    }
+
+    .mid img {
+        width: 200%;
+        margin-left: -10px;
+        margin-top: 20px;
+    }
+
+    .left {
+        width: 50%;
+        text-align: center;
+        margin-left: 10px;
+    }
+
+    .left span {
+        font-size: 0.4rem;
+    }
+
+    .left h2 {
+        margin-top: 12px;
+        font-size: 1rem;
+    }
+
+    .left p {
+        margin-top: 12px;
+        font-size: 0.4rem;
+    }
+
+    .btn-link {
+        padding: 3px 3px;
+        font-size: 0.5rem;
+        font-weight: 600;
+        border: 1px solid #f4a300;
+    }
+
+    .start-btn {
+        margin-top: 12px;
+        padding: 3px 3px;
+        font-size: 0.5rem;
+    }
+
+    .banner::after {
+        top: 250px;
+    }
+}
+
+
+/* ========== Base ========== */
+.slide-animation {
+    opacity: 0;
+    will-change: transform, opacity;
+    /* default = slide-up; override with a direction class */
+    animation: slide-up 0.8s ease-out forwards;
+}
+
+/* Directions */
+.slide-left {
+    animation-name: slide-left;
+}
+
+.slide-right {
+    animation-name: slide-right;
+}
+
+.slide-up {
+    animation-name: slide-up;
+}
+
+.slide-down {
+    animation-name: slide-down;
+}
+
+/* Optional: delays for staggering */
+.delay-100 {
+    animation-delay: 0.1s;
+}
+
+.delay-200 {
+    animation-delay: 0.2s;
+}
+
+.delay-300 {
+    animation-delay: 0.3s;
+}
+
+.delay-400 {
+    animation-delay: 0.4s;
+}
+
+.delay-500 {
+    animation-delay: 0.5s;
+}
+
+/* Optional: control duration/easing via CSS vars on any element */
+.slide-animation {
+    --slide-duration: 0.8s;
+    --slide-ease: ease-out;
+    animation-duration: var(--slide-duration);
+    animation-timing-function: var(--slide-ease);
+}
+
+/* Keyframes */
+@keyframes slide-left {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-right {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-down {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Accessibility: respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+
+    .slide-animation,
+    .slide-left,
+    .slide-right,
+    .slide-up,
+    .slide-down {
+        animation: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+    }
+}

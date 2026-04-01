@@ -1,0 +1,637 @@
+/* ==================== SERVICES SECTION ==================== */
+.services-section {
+  width: 100%;
+  padding: 80px 0;
+  background: linear-gradient(135deg, #4892dd 0%, #ffffff 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Container */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Section Header */
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-header h2 {
+  font-size: 2.8rem;
+  color: #ffffff;
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+}
+
+.section-header h2::after {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: #f4a300;
+  border-radius: 2px;
+}
+
+.section-header p {
+  font-size: 1.2rem;
+  color: #6c757d;
+  max-width: 700px;
+  margin: 20px auto 0;
+  line-height: 1.6;
+}
+
+/* ==================== SLIDER STYLES ==================== */
+.services-slider-wrapper {
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+/* Swiper Container */
+.services-slider {
+  width: 100%;
+  height: 100%;
+  padding: 20px 0 70px 0;
+}
+
+/* Slide Styling */
+.services-slider .swiper-slide {
+  height: auto;
+  transition: all 0.3s ease;
+}
+
+/* Service Card - LARGER SIZE */
+.service-card {
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 550px;
+}
+
+.service-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 50px rgba(3, 108, 179, 0.2);
+}
+
+/* Image Container - LARGER */
+.service-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+  background: #f0f2f5;
+}
+
+.service-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.service-card:hover .service-image {
+  transform: scale(1.08);
+}
+
+/* Image Overlay */
+.service-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(3, 108, 179, 0.95), rgba(3, 108, 179, 0.85));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.service-card:hover .service-overlay {
+  opacity: 1;
+}
+
+.overlay-icon {
+  color: white;
+  font-size: 64px;
+  transform: scale(0) rotate(-180deg);
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.service-card:hover .overlay-icon {
+  transform: scale(1) rotate(0deg);
+}
+
+/* Content - LARGER TEXT */
+.service-content {
+  padding: 30px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1a2a3a;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+  line-height: 1.3;
+}
+
+.service-card:hover .service-title {
+  color: #036cb3;
+}
+
+.service-description {
+  font-size: 1rem;
+  color: #6c757d;
+  line-height: 1.7;
+  margin: 0;
+  flex: 1;
+}
+
+/* Navigation Buttons - LARGER */
+.swiper-button-next,
+.swiper-button-prev {
+  width: 55px;
+  height: 55px;
+  background: #036cb3;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(3, 108, 179, 0.4);
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: #025a9e;
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(3, 108, 179, 0.5);
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.swiper-button-next {
+  right: -20px;
+}
+
+.swiper-button-prev {
+  left: -20px;
+}
+
+/* Pagination */
+.swiper-pagination {
+  bottom: 0 !important;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #cbd5e0;
+  opacity: 1;
+  transition: all 0.3s ease;
+  margin: 0 8px;
+}
+
+.swiper-pagination-bullet-active {
+  width: 32px;
+  border-radius: 6px;
+  background: #036cb3;
+}
+
+.swiper-pagination-bullet:hover {
+  background: #036cb3;
+  transform: scale(1.2);
+}
+
+/* ==================== RESPONSIVE DESIGN ==================== */
+/* Large Desktop */
+@media (min-width: 1400px) {
+  .service-image-wrapper {
+    height: 360px;
+  }
+  
+  .service-title {
+    font-size: 1.8rem;
+  }
+  
+  .service-description {
+    font-size: 1.05rem;
+  }
+  
+  .service-card {
+    min-height: 620px;
+  }
+}
+
+/* Desktop */
+@media (max-width: 1200px) {
+  .service-image-wrapper {
+    height: 300px;
+  }
+  
+  .service-title {
+    font-size: 1.5rem;
+  }
+  
+  .service-description {
+    font-size: 0.95rem;
+  }
+  
+  .service-card {
+    min-height: 520px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .services-section {
+    padding: 60px 0;
+  }
+  
+  .section-header h2 {
+    font-size: 2.4rem;
+  }
+  
+  .section-header p {
+    font-size: 1.1rem;
+  }
+  
+  .services-slider-wrapper {
+    padding: 0 40px;
+  }
+  
+  .service-image-wrapper {
+    height: 280px;
+  }
+  
+  .service-content {
+    padding: 25px;
+  }
+  
+  .service-title {
+    font-size: 1.4rem;
+  }
+  
+  .service-description {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  
+  .service-card {
+    min-height: 500px;
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 20px;
+  }
+  
+  .swiper-button-next {
+    right: -15px;
+  }
+  
+  .swiper-button-prev {
+    left: -15px;
+  }
+}
+
+/* Mobile Landscape */
+@media (max-width: 768px) {
+  .services-section {
+    padding: 50px 0;
+  }
+  
+  .section-header {
+    margin-bottom: 40px;
+  }
+  
+  .section-header h2 {
+    font-size: 2rem;
+  }
+  
+  .section-header p {
+    font-size: 1rem;
+    padding: 0 20px;
+  }
+  
+  .services-slider-wrapper {
+    padding: 0 35px;
+  }
+  
+  .service-image-wrapper {
+    height: 260px;
+  }
+  
+  .service-content {
+    padding: 22px;
+  }
+  
+  .service-title {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+  }
+  
+  .service-description {
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+  
+  .service-card {
+    min-height: 460px;
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 42px;
+    height: 42px;
+  }
+  
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 18px;
+  }
+  
+  .swiper-button-next {
+    right: -12px;
+  }
+  
+  .swiper-button-prev {
+    left: -12px;
+  }
+  
+  .overlay-icon {
+    font-size: 48px;
+  }
+}
+
+/* Mobile Portrait */
+@media (max-width: 640px) {
+  .services-section {
+    padding: 40px 0;
+  }
+  
+  .section-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .services-slider-wrapper {
+    padding: 0 30px;
+  }
+  
+  .service-image-wrapper {
+    height: 240px;
+  }
+  
+  .service-content {
+    padding: 20px;
+  }
+  
+  .service-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .service-description {
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+  
+  .service-card {
+    min-height: 420px;
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 38px;
+    height: 38px;
+    background: rgba(3, 108, 179, 0.9);
+  }
+  
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 16px;
+  }
+  
+  .swiper-button-next {
+    right: -10px;
+  }
+  
+  .swiper-button-prev {
+    left: -10px;
+  }
+  
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
+  
+  .swiper-pagination-bullet-active {
+    width: 28px;
+  }
+  
+  .overlay-icon {
+    font-size: 40px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .services-section {
+    padding: 30px 0;
+  }
+  
+  .section-header h2 {
+    font-size: 1.6rem;
+  }
+  
+  .services-slider-wrapper {
+    padding: 0 25px;
+  }
+  
+  .service-image-wrapper {
+    height: 220px;
+  }
+  
+  .service-content {
+    padding: 18px;
+  }
+  
+  .service-title {
+    font-size: 1.1rem;
+  }
+  
+  .service-description {
+    font-size: 0.75rem;
+    line-height: 1.5;
+  }
+  
+  .service-card {
+    min-height: 380px;
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 34px;
+    height: 34px;
+  }
+  
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 14px;
+  }
+  
+  .overlay-icon {
+    font-size: 36px;
+  }
+}
+
+/* ==================== ANIMATIONS ==================== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Initial animations */
+.section-header {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.service-card {
+  animation: scaleIn 0.5s ease-out;
+}
+
+/* ==================== LOADING STATE ==================== */
+.service-card.loading .service-image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card.loading .service-image-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* ==================== DARK MODE SUPPORT ==================== */
+@media (prefers-color-scheme: dark) {
+  .services-section {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  }
+  
+  .section-header h2 {
+    color: #ffffff;
+  }
+  
+  .section-header p {
+    color: #a0a0a0;
+  }
+  
+  .service-card {
+    background: #1e1e2f;
+  }
+  
+  .service-title {
+    color: #ffffff;
+  }
+  
+  .service-description {
+    color: #b0b0b0;
+  }
+  
+  .service-image-wrapper {
+    background: #2a2a3a;
+  }
+}
+
+/* ==================== ACCESSIBILITY ==================== */
+.service-card:focus-visible {
+  outline: 2px solid #036cb3;
+  outline-offset: 2px;
+  transform: translateY(-5px);
+}
+
+.swiper-button-next:focus-visible,
+.swiper-button-prev:focus-visible,
+.swiper-pagination-bullet:focus-visible {
+  outline: 2px solid #036cb3;
+  outline-offset: 2px;
+}
+
+/* ==================== TOUCH DEVICE OPTIMIZATION ==================== */
+@media (hover: none) and (pointer: coarse) {
+  .service-card:active {
+    transform: scale(0.98);
+    transition: transform 0.1s ease;
+  }
+  
+  .service-card:hover {
+    transform: none;
+  }
+  
+  .service-card:hover .service-image {
+    transform: none;
+  }
+  
+  .service-card:hover .service-overlay {
+    opacity: 0;
+  }
+}
