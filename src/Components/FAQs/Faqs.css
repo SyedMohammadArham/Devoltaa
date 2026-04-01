@@ -1,0 +1,233 @@
+/* Background wrapper */
+.faq-bg {
+  width: 100%;
+  height: auto;
+    background: linear-gradient(135deg, #4892dd 0%, #d2d0d0 100%);
+  padding: 100px 50px;
+}
+
+
+.faq-bg h2 {
+  text-align: center;
+  font-size: 4rem;
+  color: #f4a300;
+}
+
+.faq-bg span {
+  color: rgb(2, 6, 73);
+}
+
+/* Heading */
+.faq-heading {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 5px;
+  color: goldenrod;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  text-shadow: 0 0 8px rgba(218, 165, 32, 0.5);
+}
+
+/* FAQ container */
+.faq-section {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 35px 20px;
+  background: #fff;
+  /* Slight transparency */
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(218, 165, 32, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(218, 165, 32, 0.15), 0 4px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* FAQ items */
+.faq-section details {
+  background: linear-gradient(135deg, #4892dd 0%, #d2d0d0 100%);
+  border-radius: 10px;
+  margin-bottom: 18px;
+  overflow: hidden;
+  transition: background 0.3s ease, transform 0.2s ease;
+  border: 1px solid rgba(218, 165, 32, 0.15);
+}
+
+.faq-section details:hover {
+  background: linear-gradient(135deg, #15508c 0%, #ada7c6 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(218, 165, 32, 0.15);
+}
+
+/* Question */
+.faq-section summary {
+  cursor: pointer;
+  padding: 16px 22px;
+  font-size: 1.15rem;
+  font-weight: 500;
+  position: relative;
+  color: rgb(255, 213, 108);
+  transition: color 0.3s ease;
+}
+
+.faq-section summary:hover {
+  color: #ffd95a;
+}
+
+.faq-section summary::marker {
+  display: none;
+}
+
+.faq-section summary::after {
+  content: "+";
+  position: absolute;
+  right: 22px;
+  font-size: 1.3rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+  color: goldenrod;
+}
+
+.faq-section details[open] summary::after {
+  content: "-";
+  transform: rotate(180deg);
+  color: #ffd95a;
+}
+
+/* Answer text */
+.faq-section p {
+  padding: 0 22px 16px 22px;
+  margin: 0;
+  color: #e0e0e0;
+  line-height: 1.6;
+  border-top: 1px solid rgba(255, 215, 0, 0.15);
+  animation: fadeIn 0.35s ease;
+}
+
+/* Smooth open animation */
+details[open] p {
+  animation: fadeIn 0.35s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------- Desktop Large ---------- */
+@media (max-width: 2000px) and (min-width: 1500px) {
+  .faq-bg {
+    padding: 80px 40px;
+  }
+
+  .faq-bg h2 {
+    font-size: 7rem;
+  }
+
+  .faq-section {
+    padding: 40px 25px;
+  }
+
+  .faq-section summary {
+    font-size: 2.6rem;
+  }
+
+  .faq-section p {
+    font-size: 2.4rem;
+  }
+
+  .faq-section summary::after {
+    font-size: 2.6rem;
+  }
+}
+
+/* ---------- Laptop ---------- */
+@media (max-width: 1024px) {
+  .faq-bg {
+    padding: 70px 30px;
+  }
+
+  .faq-bg h2 {
+    font-size: 3rem;
+  }
+
+  .faq-section summary {
+    font-size: 1.05rem;
+  }
+}
+
+/* ---------- Tablet ---------- */
+@media (max-width: 768px) {
+  .faq-bg {
+    padding: 60px 25px;
+  }
+
+  .faq-bg h2 {
+    font-size: 2.6rem;
+  }
+
+  .faq-section {
+    padding: 25px 15px;
+  }
+}
+
+/* ---------- Mobile Large ---------- */
+@media (max-width: 425px) {
+  .faq-bg {
+    padding: 50px 20px;
+  }
+
+  .faq-bg h2 {
+    font-size: 2.2rem;
+  }
+
+  .faq-heading {
+    font-size: 1.6rem;
+  }
+
+  .faq-section summary {
+    font-size: 1rem;
+  }
+}
+
+/* ---------- Mobile Medium ---------- */
+@media (max-width: 375px) {
+  .faq-bg {
+    padding: 40px 18px;
+  }
+
+  .faq-bg h2 {
+    font-size: 2rem;
+  }
+
+  .faq-section summary {
+    font-size: 0.95rem;
+  }
+}
+
+/* ---------- Mobile Small ---------- */
+@media (max-width: 320px) {
+  .faq-bg {
+    padding: 35px 15px;
+  }
+
+  .faq-bg h2 {
+    font-size: 1.8rem;
+  }
+
+  .faq-heading {
+    font-size: 1.4rem;
+  }
+
+  .faq-section summary {
+    font-size: 0.9rem;
+  }
+}
