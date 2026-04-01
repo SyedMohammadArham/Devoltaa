@@ -1,0 +1,527 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.marketing-slider-container {
+  min-height: 100vh;
+    background: linear-gradient(135deg, #4892dd 0%, #d2d0d0 100%);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  padding: 2rem 1rem;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Header Styles */
+.marketing-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.marketing-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%);
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border-radius: 100px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+}
+
+.marketing-title {
+  font-size: clamp(2rem, 6vw, 3.8rem);
+  font-weight: 800;
+  color: #1a202c;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.title-highlight {
+  background: linear-gradient(135deg, #FF6B6B, #FF8E53);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+.marketing-subtitle {
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: #4a5568;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* Stats Overview */
+.stats-overview {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 1rem 2rem;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+  transform: translateY(-5px);
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #FF6B6B, #FF8E53);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: #6c757d;
+  margin-top: 0.25rem;
+  font-weight: 500;
+}
+
+/* Carousel Wrapper */
+.marketing-carousel-wrapper {
+  position: relative;
+  max-width: 1400px;
+  margin: 0 -200px ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 620px;
+  padding: 1rem 0;
+}
+
+/* Cards Container */
+.marketing-cards-container {
+  position: relative;
+  width: 100%;
+  height: 620px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Individual Cards */
+.marketing-card {
+  position: absolute;
+  width: 400px;
+  max-width: 85vw;
+  border-radius: 2rem;
+  padding: 2rem;
+  color: white;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  box-shadow: 0 25px 40px -12px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  height: auto;
+  min-height: 560px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-center {
+  left: 50%;
+  transform: translateX(-50%) scale(1);
+  z-index: 10;
+  opacity: 1;
+  box-shadow: 0 35px 50px -15px rgba(0, 0, 0, 0.3);
+}
+
+.card-left {
+  left: calc(50% - 340px);
+  transform: translateX(-50%) scale(0.85);
+  z-index: 5;
+  opacity: 0.5;
+  filter: blur(2px);
+  pointer-events: none;
+}
+
+.card-right {
+  left: calc(50% + 340px);
+  transform: translateX(-50%) scale(0.85);
+  z-index: 5;
+  opacity: 0.5;
+  filter: blur(2px);
+  pointer-events: none;
+}
+
+
+@media (max-width: 1024px) {
+  .card-left {
+    left: calc(50% - 300px);
+  }
+  .card-right {
+    left: calc(50% + 300px);
+  }
+}
+
+@media (max-width: 768px) {
+  .card-left,
+  .card-right {
+    display: none;
+  }
+  .card-center {
+    position: relative;
+    left: auto;
+    transform: none;
+    margin: 0 auto;
+  }
+  .marketing-cards-container {
+    height: auto;
+  }
+  .marketing-card {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* Card Content */
+.marketing-card-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  
+}
+
+.marketing-card-icon {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+.marketing-card-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.marketing-card-subtitle {
+  font-size: 0.9rem;
+  opacity: 0.85;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+.marketing-card-description {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  opacity: 0.9;
+  margin-bottom: 1.2rem;
+}
+
+/* Stats Badge */
+.marketing-stats-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+  width: fit-content;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.stats-badge-icon {
+  font-size: 1rem;
+}
+
+.stats-badge-text {
+  letter-spacing: 0.5px;
+}
+
+/* Examples Section */
+.marketing-examples-section {
+  margin: 0.5rem 0 1.2rem;
+}
+
+.marketing-examples-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  opacity: 0.7;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.marketing-examples-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.marketing-example-tag {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  padding: 0.4rem 1rem;
+  border-radius: 100px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.marketing-example-tag:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Card Footer */
+.marketing-card-footer {
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+.marketing-explore-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: gap 0.2s ease;
+  padding: 0.5rem 0;
+}
+
+.marketing-explore-link svg {
+  transition: transform 0.2s ease;
+}
+
+.marketing-explore-link:hover {
+  gap: 0.8rem;
+}
+
+.marketing-explore-link:hover svg {
+  transform: translateX(4px);
+}
+
+/* Navigation Buttons */
+.marketing-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease;
+  z-index: 20;
+  color: #1a202c;
+}
+
+.marketing-nav-btn:hover {
+  transform: translateY(-50%) scale(1.05);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #FF6B6B, #FF8E53);
+  color: white;
+}
+
+.marketing-prev-btn {
+  left: 1rem;
+}
+
+.marketing-next-btn {
+  right: 1rem;
+}
+
+.marketing-prev-btn{
+    margin-top: 100px;
+}
+.marketing-next-btn{
+    margin-top: 100px;
+}
+@media (max-width: 768px) {
+  .marketing-nav-btn {
+    width: 40px;
+    height: 40px;
+  }
+  .marketing-prev-btn {
+    left: 0.5rem;
+  }
+  .marketing-next-btn {
+    right: 0.5rem;
+  }
+}
+
+/* Dots Navigation */
+.marketing-dots-container {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.marketing-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #cbd5e0;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.marketing-dot-active {
+  width: 28px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #FF6B6B, #FF8E53);
+}
+
+.marketing-dot:hover {
+  transform: scale(1.2);
+  background: #FF6B6B;
+}
+
+/* Counter Info */
+.marketing-counter-info {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #4a5568;
+}
+
+.marketing-counter-current {
+  font-size: 1.2rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #FF6B6B, #FF8E53);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.marketing-counter-separator {
+  margin: 0 0.25rem;
+  color: #cbd5e0;
+}
+
+.marketing-counter-total {
+  color: #a0aec0;
+}
+
+/* CTA Section */
+.marketing-cta {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.marketing-cta-button {
+  background: linear-gradient(135deg, #FF6B6B, #FF8E53);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 100px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+}
+
+.marketing-cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);
+  gap: 1rem;
+}
+
+.marketing-cta-button svg {
+  transition: transform 0.2s ease;
+}
+
+.marketing-cta-button:hover svg {
+  transform: translateX(4px);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .marketing-slider-container {
+    padding: 1.5rem 0.5rem;
+  }
+  
+  .marketing-card {
+    padding: 1.5rem;
+    min-height: 520px;
+  }
+  
+  .marketing-card-title {
+    font-size: 1.5rem;
+  }
+  
+  .marketing-card-icon {
+    font-size: 3rem;
+  }
+  
+  .marketing-example-tag {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.8rem;
+  }
+  
+  .stats-overview {
+    gap: 1rem;
+  }
+  
+  .stat-item {
+    padding: 0.75rem 1.25rem;
+  }
+  
+  .stat-number {
+    font-size: 1.5rem;
+  }
+}
+
+/* Hover effect for center card */
+.card-center:hover {
+  transform: translateX(-50%) scale(1.02);
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .card-center:hover {
+    transform: none;
+  }
+}
