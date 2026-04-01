@@ -1,7 +1,7 @@
 import React from 'react'
-import Team from './team/Team'
+import Team from './Team/Team'
 // import { Pricing } from "./Pricing/Pricing"
-import { Pricedn } from './Pricing/Pricedn'
+import { Pricedn } from './pricing/Pricedn'
 import  Faqs  from "./FAQs/Faqs"
 
 const About = () => {
