@@ -1,0 +1,151 @@
+.logo-section {
+    padding: 120px 20px; /* add side padding for smaller screens */
+    text-align: center;
+    margin-top: -60px;
+
+}
+
+.logo-heading {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: #f4a300;
+}
+
+.logo-heading span {
+    color: #fff;
+}
+
+.logo-disc {
+    font-size: 1.2rem;
+    color: #000000;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.logo-grid {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.logo-card {
+    background-color: #1e1e2fbe;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.logo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px #f4a300;
+
+}
+
+.logo-image {
+    width: 100%;
+    height: 40vh;
+    border-radius: 5px;
+}
+
+.logo-title {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+/* Tablet (up to 1024px) */
+@media (max-width: 2000px) and (min-width: 1500px) {
+    .logo-section {
+        padding: 100px 15px;
+    }
+    .logo-heading {
+        font-size: 6rem;
+    }
+    .logo-disc {
+        font-size: 1.5rem;
+    }
+    .logo-card {
+        width: 30%;
+    }
+}
+@media (max-width: 1360px) and (min-width: 1025px) {
+    .logo-section {
+        padding: 90px 15px;
+    }
+    .logo-heading {
+        font-size: 4rem;
+    }
+    .logo-disc {
+        font-size: 1.1rem;
+    }
+    .logo-card {
+        width: 40%;
+    }
+}
+@media (max-width: 1024px) and (min-width: 769px) {
+    .logo-heading {
+        font-size: 3.7rem;
+    }
+    .logo-disc {
+        font-size: 1.2rem;
+    }
+    .logo-card {
+        width: 45%;
+    }
+}
+
+/* Mobile (up to 768px) */
+@media (max-width: 768px) and (min-width: 426px) {
+    .logo-section {
+        padding: 80px 15px;
+    }
+    .logo-heading {
+        font-size: 2.8rem;
+    }
+    .logo-disc {
+        font-size: 1.1rem;
+    }
+    .logo-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+/* Small Mobile (up to 468px) */
+@media (max-width: 425px) and (min-width: 321px) {
+    .logo-section {
+        padding: 60px 10px;
+    }
+    .logo-heading {
+        font-size: 2.2rem;
+    }
+    .logo-disc {
+        font-size: 1rem;
+    }
+    .logo-card {
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media (max-width: 320px) {
+    .logo-section {
+        padding: 50px 10px;
+    }
+    .logo-heading {
+        font-size: 1.8rem;
+    }
+    .logo-disc {
+        font-size: 0.9rem;
+    }
+    .logo-card {
+        width: 80%;
+        height: auto;
+    }
+    
+}
