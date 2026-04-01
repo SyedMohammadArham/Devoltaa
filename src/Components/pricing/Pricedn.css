@@ -1,0 +1,172 @@
+/* ---------------- Main section ---------------- */
+.dn-back {
+    background: rgb(230, 241, 251);
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    padding: 50px 20px;
+    gap: 20px;
+}
+
+.pr-left {
+    flex: 1 1 45%;
+}
+
+.pr-left img {
+    width: 80%;
+    height: auto;
+}
+
+.pr-right {
+    flex: 1 1 45%;
+    padding: 20px;
+}
+
+.pr-right h1 {
+    font-size: 4.5rem;
+    color: rgb(2, 6, 73);
+}
+
+.pr-right p {
+    font-size: 1.5rem;
+    color: gray;
+    margin-top: 10px;
+}
+
+/* ---------------- Breakpoints ---------------- */
+
+/* 1440px and below */
+@media (max-width: 2000px) and (min-width: 1500px) {
+    .pr-right h1 {
+        font-size: 4rem;
+    }
+    .dn-back {
+        height: 55vh;
+    }
+    .pr-left img {
+        width: 90%;
+        margin-top: 20px;
+    }
+    .pr-right h1 {
+        font-size: 7rem;
+    }
+    .pr-right p {
+        font-size: 3.7rem;
+    }
+    .dn-back::after{
+        margin-bottom: -10px;
+    }
+    .dn-back::before {
+        top: -35px;
+    }
+}
+
+/* 1024px and below */
+@media (max-width: 1024px) {
+    .dn-back {
+        height: 70vh;
+    }
+    .pr-left {
+        flex: 1 1 50%;
+    }
+    .pr-left img {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .pr-right h1 {
+        font-size:3.4rem;
+    }
+
+    .pr-right p {
+        font-size: 1.5rem;
+    }
+}
+
+/* 768px and below */
+@media (max-width: 768px) {
+    .dn-back {
+        height: 100vh;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pr-left,
+    .pr-right {
+        flex: 1 1 100%;
+    }
+    .pr-left img {
+        width: 60%;
+        margin-top: 40px;
+    }
+
+    .pr-right h1 {
+        font-size: 3rem;
+    }
+
+    .pr-right p {
+        font-size: 1.2rem;
+    }
+
+    .pr-right button {
+        font-size: 1rem;
+        padding: 8px 20px;
+    }
+}
+
+/* 425px and below */
+@media (max-width: 425px) {
+    .dn-back {
+        height: 100vh;
+        /* padding: 20px; */
+    }
+    .pr-left img {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .pr-right h1 {
+        font-size: 2.5rem;
+    }
+
+    .pr-right p {
+        font-size: 1.2rem;
+    }
+}
+
+/* 375px and below */
+@media (max-width: 375px) {
+    .dn-back {
+        height: 100vh;
+    }
+    .pr-left img {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .pr-right h1 {
+        font-size: 2.4rem;
+    }
+
+    .pr-right p {
+        font-size: 1.2rem;
+    }
+}
+
+/* 320px and below */
+@media (max-width: 320px) {
+    .dn-back {
+        height: 100vh;
+    }
+    .pr-left img {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .pr-right h1 {
+        font-size: 1.9rem;
+    }
+
+    .pr-right p {
+        font-size: 1rem;
+    }
+}
