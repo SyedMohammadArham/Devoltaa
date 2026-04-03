@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.78bbee9e.css",
+    "main.js": "/static/js/main.7268791a.js",
+    "static/media/devolta.png": "/static/media/devolta.7d300b65127d71703e5b.png",
+    "static/media/web1.png": "/static/media/web1.93fac0f26c26fe12307a.png",
+    "static/media/charactor.png": "/static/media/charactor.8feb40b7bd98b95a6901.png",
+    "static/media/portfolio.png": "/static/media/portfolio.2c1ee9471963b8856bac.png",
+    "static/media/background.jpg": "/static/media/background.d8a4fe6a3cd767523621.jpg",
+    "static/media/web5.png": "/static/media/web5.6ce8fe953013aa425d21.png",
+    "static/media/shopify1.png": "/static/media/shopify1.2b33535dfa0427d545a9.png",
+    "static/media/logo3.png": "/static/media/logo3.04f002d4f3605c590ee1.png",
+    "static/media/creative-design.jpeg": "/static/media/creative-design.38b4cf222a9f019427f6.jpeg",
+    "static/media/marketing.jpeg": "/static/media/marketing.37a2fe6edec8dcb5705a.jpeg",
+    "static/media/software-dev.jpeg": "/static/media/software-dev.0d42fd43f18793b0d090.jpeg",
+    "static/media/ecommerce.jpeg": "/static/media/ecommerce.8ed3bf96e015ac277c7a.jpeg",
+    "static/media/web2.png": "/static/media/web2.3abfe48ebff6f578a5c0.png",
+    "static/media/web4.png": "/static/media/web4.04001dfc68af07bfc702.png",
+    "static/media/mockup2.jpg": "/static/media/mockup2.06aad0f54198e0cddb0f.jpg",
+    "static/media/mockup1.jpg": "/static/media/mockup1.8816592b181813eb7016.jpg",
+    "static/media/arham.jpeg": "/static/media/arham.4835f159278bbe910515.jpeg",
+    "static/media/restaurant.jpg": "/static/media/restaurant.1a9695f4a4ef84a34007.jpg",
+    "static/media/graphic.jpg": "/static/media/graphic.9fbb9d16c947a3f7b229.jpg",
+    "static/media/shahzaib.jpeg": "/static/media/shahzaib.db11f42bee2576c1ddbb.jpeg",
+    "static/media/About.jpeg": "/static/media/About.d28cf337bbb8e46ff2e0.jpeg",
+    "static/media/mockup3.jpg": "/static/media/mockup3.681885633e6673c2f307.jpg",
+    "static/media/services.jpeg": "/static/media/services.252fbe696665ff5a3e7c.jpeg",
+    "static/media/logo2.jpg": "/static/media/logo2.dd80a3222d48cec09c19.jpg",
+    "index.html": "/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.78bbee9e.css",
+    "static/js/main.7268791a.js"
+  ]
+}
