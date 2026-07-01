@@ -24,48 +24,22 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="tophead">
-        <div className="toplft">
-          <p>
-            <MdEmail style={{ color: "#036cb3", width: "20px", height: "20px", position: "absolute", margin: "2px -20px" }} /> 
-            devoltaa71@gmail.com
-          </p>
-          <p>
-            <MdLocationPin style={{ color: "#036cb3", width: "20px", height: "20px", position: "absolute", margin: "2px -20px" }} />
-            Model Town k Block Lahore Pakistan
-          </p>
-        </div>
-        <div className="topright">
-          {/* Social Media Icons */}
-          <div className="icons">
-            <a href="https://www.instagram.com/devolta.inc?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noreferrer">
-              <FaInstagram />
-            </a>
-            <a href="https://www.facebook.com/share/1AsYNGnSnP/" target="_blank" rel="noreferrer">
-              <FaFacebookF />
-            </a>
-            <a href="https://api.whatsapp.com/send/?phone=%2B923245356726&text=Hello%21+I+would+like+to+get+in+touch+with+you.&type=phone_number&app_absent=0https://web.whatsapp.com/" target="_blank" rel="noreferrer">
-              <FaWhatsapp />
-            </a>
-          </div>
-        </div>
-      </header>
-      
       <nav className="header">
         {/* Logo */}
         <div className="logo">
           <img src={logo} alt="Logo" />
+          <h2 className="footer-logo-text">DEVOLTA</h2>
         </div>
 
         {/* Desktop Links */}
         <ul className="navlinks">
           <Link className="nav" to="/">Home</Link>
           <Link className="nav" to="/about">About</Link>
-          
+
           {/* Services Dropdown */}
           <div className="dropdown" onMouseLeave={closeDropdown}>
-            <button 
-              className="dropdown-btn" 
+            <button
+              className="dropdown-btn"
               onClick={toggleDropdown}
               onMouseEnter={() => setIsDropdownOpen(true)}
             >
@@ -96,10 +70,24 @@ const Navbar = () => {
               </ul>
             )}
           </div>
-          
+
           <Link className="nav" to="/portfolio">Our Projects</Link>
           <Link className="nav" to="/contact">Contact</Link>
         </ul>
+        <div className="topright">
+          {/* Social Media Icons */}
+          <div className="icons">
+            <a href="https://www.instagram.com/devolta.inc?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noreferrer">
+              <FaInstagram />
+            </a>
+            <a href="https://www.facebook.com/share/1AsYNGnSnP/" target="_blank" rel="noreferrer">
+              <FaFacebookF />
+            </a>
+            <a href="https://api.whatsapp.com/send/?phone=%2B923245356726&text=Hello%21+I+would+like+to+get+in+touch+with+you.&type=phone_number&app_absent=0https://web.whatsapp.com/" target="_blank" rel="noreferrer">
+              <FaWhatsapp />
+            </a>
+          </div>
+        </div>
 
         {/* Hamburger Icon (Mobile) */}
         <div className="hamburger" onClick={toggleMenu}>
@@ -114,7 +102,7 @@ const Navbar = () => {
         </div>
         <Link className="nav" to="/" onClick={toggleMenu}>Home</Link>
         <Link className="nav" to="/about" onClick={toggleMenu}>About</Link>
-        
+
         {/* Services with Submenu in Mobile */}
         <div className="mobile-dropdown">
           <button className="mobile-dropdown-btn" onClick={toggleDropdown}>
@@ -149,7 +137,7 @@ const Navbar = () => {
             </div>
           )}
         </div>
-        
+
         <Link className="nav" to="/portfolio" onClick={toggleMenu}>Our Projects</Link>
         <Link className="nav" onClick={toggleMenu}>Contact</Link>
 

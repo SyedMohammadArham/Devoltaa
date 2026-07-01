@@ -8,7 +8,7 @@
 .bk {
     background: linear-gradient(135deg, #4892dd 0%, #ffffff 100%);
     width: 100%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .banner {
@@ -17,6 +17,8 @@
     background-size: cover;
     height: 100vh;
     width: 100%;
+    overflow-x: hidden;
+    /* margin-top: 1px; */
 }
 
 /* .banner::after {
@@ -242,10 +244,6 @@
         margin-left: -30px;
         margin-top: 10px;
     }
-
-    .banner::after {
-        top: 440px;
-    }
 }
 
 @media (max-width: 912px) and (min-width: 854px) {
@@ -297,9 +295,7 @@
         margin-top: -10px;
     }
 
-    .banner::after {
-        top: 780px;
-    }
+    
 }
 
 @media (max-width: 768px) and (min-width: 541px) {

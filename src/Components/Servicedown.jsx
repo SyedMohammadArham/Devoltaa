@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import "./Servicedown.css";
-import services from "../Assets/services.jpeg";
+import services from "../Assets/services.png";
 
 export const Servicedown = () => {
     useEffect(() => {

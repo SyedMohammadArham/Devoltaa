@@ -111,10 +111,7 @@ const Ecommerce = () => {
 
             {/* Stats Overview */}
             <div className="stats-overview">
-                <div className="stat-item">
-                    <div className="stat-number">50+</div>
-                    <div className="stat-label">Stores Launched</div>
-                </div>
+                
                 <div className="stat-item">
                     <div className="stat-number">99.9%</div>
                     <div className="stat-label">Uptime Guarantee</div>

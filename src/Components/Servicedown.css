@@ -15,6 +15,7 @@
     flex-wrap: wrap;
     position: relative;
     background: rgb(230, 241, 251);
+    overflow-x: hidden;
 }
 
 /* .back::before {

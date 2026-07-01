@@ -4,29 +4,6 @@
   box-sizing: border-box;
 }
 
-.tophead {
-  width: 100%;
-  height: 5vh;
-  background-color: #020001;
-  display: flex;
-  justify-content: space-around;
-}
-
-.toplft {
-  /* border: 1px solid red; */
-  width: 40%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.toplft p {
-  color: #ffffffae;
-  font-size: 16px;
-  padding: 5px;
-  font-weight: 400;
-}
-
 .topright {
   width: 40%;
   display: flex;
@@ -71,13 +48,10 @@
 
 .header {
   width: 100%;
-  height: auto;
+  height: 11vh;
   display: flex;
   align-items: center;
-  /* background-color: #f3f5f7; */
-  background: linear-gradient(135deg, #a3c0dd 0%, #b8cde1 100%);
-
-
+  background: linear-gradient(135deg, #4584c4 0%, #a4b1be 100%);
   padding: 0 20px;
   color: #fff;
 }
@@ -87,7 +61,7 @@
   margin-top: 5px;
   display: flex;
   align-items: center;
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 .logo img {
@@ -101,17 +75,16 @@
 }
 
 .navlinks {
-  width: 50%;
+  width: 70%;
   display: flex;
-  gap: 20px;
   justify-content: space-around;
   list-style: none;
-  margin-left: 110px;
+  margin-left: 210px;
   align-items: center;
 }
 
 .nav {
-  color: #036cb3;
+  color: #fff;
   padding: 5px 20px;
   font-size: 18px;
   text-decoration: none;
@@ -134,7 +107,7 @@
 .dropdown-btn {
   background: none;
   border: none;
-  color: #036cb3;
+  color: #fff;
   padding: 5px 20px;
   font-size: 18px;
   font-weight: 700;
@@ -282,7 +255,8 @@
   right: -250px;
   height: 100%;
   width: 250px;
-  background: rgb(2, 6, 73);
+  background-image: linear-gradient(rgba(83, 187, 247, 0.886), rgba(53, 98, 132, 0.866));
+
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -384,7 +358,7 @@
   }
 
   .logo img {
-    width: 60px;
+    width: 55px;
   }
 
   .icons {
@@ -413,6 +387,17 @@
 }
 
 @media (max-width: 768px) {
+  .logo {
+    width: 180px;
+    margin-left: 15px;
+  }
+  .logo img {
+    width: 55px;
+  }
+
+  .icons {
+    margin-left: 100px;
+  }
   .navlinks {
     display: none;
   }
@@ -450,11 +435,11 @@
 @media (max-width: 412px) {
   .logo {
     width: 120px;
-    margin-left: -10px;
+    margin-left: -20px;
   }
 
   .logo img {
-    width: 60%;
+    width: 50%;
   }
 
   .logo h1 {
