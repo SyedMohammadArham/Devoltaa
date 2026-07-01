@@ -22,7 +22,7 @@ const Team = () => {
     {
       img: img3,
       name: "Syed Shahzaib",
-      role: "CO Founder & CFO"
+      role: "CO Founder"
     }
   ];
 
