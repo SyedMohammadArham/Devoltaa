@@ -32,8 +32,10 @@
 }
 
 .port-cher img {
-    max-width: 200px;
-    filter: brightness(0) invert(1);
+    max-width: 250px;
+    position: relative;
+    /* margin-top: 100px; */
+    /* filter: brightness(0) invert(1); */
 }
 
 /* Portfolio Info Section */
