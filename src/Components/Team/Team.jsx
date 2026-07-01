@@ -17,12 +17,12 @@ const Team = () => {
     {
       img: img2,
       name: "Syed Muhammad Arham",
-      role: "FullStack Web Developer"
+      role: "CEO & Founder"
     },
     {
       img: img3,
       name: "Syed Shahzaib",
-      role: "Frontend Developer & SEO Handler"
+      role: "CO Founder & CTO"
     }
   ];
 
