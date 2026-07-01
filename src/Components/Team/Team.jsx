@@ -17,7 +17,7 @@ const Team = () => {
     {
       img: img2,
       name: "Syed Muhammad Arham",
-      role: "CEO & Founder"
+      role: "Founder & CEO"
     },
     {
       img: img3,
