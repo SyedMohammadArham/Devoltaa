@@ -3,7 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 import img2 from "../../Assets/arham.jpeg";
-import img3 from "../../Assets/shahzaib.jpeg";
+import img3 from "../../Assets/user.png";
 
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import "./Team.css";
